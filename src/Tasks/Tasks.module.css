@@ -1,0 +1,85 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  margin-top: 25px;
+  background-color: var(--gray-500);
+  border-radius: 0.5rem;
+}
+
+.listContent {
+  display: flex;
+  gap: 0.750rem;
+}
+
+.listCheckBoxTrue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple);
+  min-width: 1.125rem;
+  height: 1.125rem;
+  border: 2px solid var(--purple);
+  border-radius: 50%;
+  color: var(--gray-500);
+  cursor: pointer;
+  transition: background-color  .1s, border  .1s;
+}
+
+.listCheckBoxTrue:hover {
+  background-color: var(--purple-dark);
+  border: 2px solid var(--purple-dark);
+}
+
+.listCheckBox{
+  background-color: transparent;
+  min-width: 1.125rem;
+  height: 1.125rem;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border .1s;
+}
+
+.listCheckBox:hover {
+  border:  2px solid var(--blue-dark);
+  
+}
+
+.listCheckBox:focus {
+  outline: none;
+  border:  2px solid var(--blue-dark);
+}
+
+.listText{
+  display: inline;
+  line-height: 20px;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.listTextTrue {
+  display: inline;
+  line-height: 20px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--gray-300);
+  text-decoration:line-through;
+}
+
+.listTrash{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  color: var(--gray-300);
+}
+
+.listTrash:hover {
+  border-radius: .25rem;
+  color: var(--danger);
+  background-color: var(--gray-400);
+}

@@ -1,0 +1,50 @@
+.main {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.inputArea{
+  display: flex;
+  gap: 0.5rem;
+  margin: -27px 0 4rem;
+}
+
+.textInput {
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: var(--gray-300);
+  padding: 1rem;
+  flex: 1;
+}
+
+.textInput:focus {
+  color: var(--gray-100);
+  outline: none;
+  border: 1px solid var(--purple);
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  padding: 1rem;
+  border-radius:.5rem;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  gap: .5rem;
+  transition: background-color 0.2s;
+}
+
+.button:not(:disabled):hover {
+  background-color: var(--blue);
+}
+
+.button:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
