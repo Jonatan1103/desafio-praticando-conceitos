@@ -48,3 +48,13 @@
   opacity: 0.8;
   cursor: not-allowed;
 }
+
+@media (max-width:26rem) {
+  .inputArea {
+    flex-direction: column;
+  }
+
+  .button {
+    justify-content: start;
+  }
+}
